@@ -72,7 +72,7 @@ namespace W2L8
                     b = result;
                 }
             }
-            /*Console.WriteLine("\n----- Exercise nr. 4 -----\n");
+            Console.WriteLine("\n----- Exercise nr. 4 -----\n");
             Console.Write("Enter a number: ");
             a = Int32.Parse(Console.ReadLine());
             b = 1;
@@ -92,11 +92,11 @@ namespace W2L8
 
                 }
                 Console.WriteLine("");
-                
-            }
-*/
 
-           /* Console.WriteLine("\n----- Exercise nr. 5 -----\n");
+            }
+
+
+            Console.WriteLine("\n----- Exercise nr. 5 -----\n");
             for (i = 0; i <= 20; i++)
             {
                 Console.WriteLine(Math.Pow(i, 3));
@@ -105,13 +105,13 @@ namespace W2L8
             Console.WriteLine("\n----- Exercise nr. 6 -----\n");
 
             x = 0.0;
-            double z = 0.0;
-            for (z = 0.0; z <= 20; z++)
+            double p = 0.0;
+            for (p = 0.0; p <= 20; p++)
             {
-                x = z + (z / 2) + (z / 3) + (z / 4);
+                x = p + (p / 2) + (p / 3) + (p / 4);
                 x = Math.Round(x, 3);
                 Console.WriteLine(x);
-            }*/
+            }
 
             Console.WriteLine("\n----- Exercise nr. 7 -----\n");
             Console.Write("Enter a odd number: ");
@@ -158,63 +158,63 @@ namespace W2L8
             }
 
 
-            /*            Console.WriteLine("\n----- Exercise nr. 8 -----\n");
-                        Console.Write("Enter string: ");
-                        str = Console.ReadLine();
-                        characters = str.ToCharArray();
-                        a = characters.Length;
-                        Console.Write("String backward: ");
-                        for (i = a; i > 0; i--)
-                        {
-                            b = i - 1;
-                            m = characters[b];
-                            Console.Write(m);
-                        }
-                        Console.WriteLine("");
+            Console.WriteLine("\n----- Exercise nr. 8 -----\n");
+            Console.Write("Enter string: ");
+            str = Console.ReadLine();
+            characters = str.ToCharArray();
+            a = characters.Length;
+            Console.Write("String backward: ");
+            for (i = a; i > 0; i--)
+            {
+                b = i - 1;
+                m = characters[b];
+                Console.Write(m);
+            }
+            Console.WriteLine("");
 
-                        Console.WriteLine("\n----- Exercise nr. 9 -----\n");
-                        Console.Write("Enter integer number: ");
-                        a = Int32.Parse(Console.ReadLine());
-                        str = "";
-                        while (a != 0)
-                        {
-                            x = a % 2;
-                            y = a / 2;
-                            a = Convert.ToInt32(Math.Floor(y));
-                            str += x;
-                        }
-                        binary = str.ToCharArray();
-                        a = binary.Length;
-                        Console.Write("After convert from binary number: ");
-                        for (i = a; i > 0; i--)
-                        {
-                            b = i - 1;
-                            m = binary[b];
-                            Console.Write(m);
-                        }
-                        Console.WriteLine("");
+            Console.WriteLine("\n----- Exercise nr. 9 -----\n");
+            Console.Write("Enter integer number: ");
+            a = Int32.Parse(Console.ReadLine());
+            str = "";
+            while (a != 0)
+            {
+                x = a % 2;
+                y = a / 2;
+                a = Convert.ToInt32(Math.Floor(y));
+                str += x;
+            }
+            binary = str.ToCharArray();
+            a = binary.Length;
+            Console.Write("After convert from binary number: ");
+            for (i = a; i > 0; i--)
+            {
+                b = i - 1;
+                m = binary[b];
+                Console.Write(m);
+            }
+            Console.WriteLine("");
 
 
-                        Console.WriteLine("\n----- Exercise nr. 10 -----\n");
-                        Console.WriteLine("Enter two integer number: ");
-                        Console.Write("Enter a: ");
-                        a = Int32.Parse(Console.ReadLine());
-                        Console.Write("Enter b: ");
-                        b = Int32.Parse(Console.ReadLine());
-                        if (a >= b)
-                            greater = a;
-                        else
-                            greater = b;
-                        i = greater;
-                        for (i = greater; i >= 1; i--)
-                        {
-                            if ((a % i == 0) && (b % i == 0))
-                            {
-                                break;
-                            }
-                        }
-                        greater = a * b / i;
-                        Console.WriteLine("The lowest common multiple is: " + greater);*/
+            Console.WriteLine("\n----- Exercise nr. 10 -----\n");
+            Console.WriteLine("Enter two integer number: ");
+            Console.Write("Enter a: ");
+            a = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter b: ");
+            b = Int32.Parse(Console.ReadLine());
+            if (a >= b)
+                greater = a;
+            else
+                greater = b;
+            i = greater;
+            for (i = greater; i >= 1; i--)
+            {
+                if ((a % i == 0) && (b % i == 0))
+                {
+                    break;
+                }
+            }
+            greater = a * b / i;
+            Console.WriteLine("The lowest common multiple is: " + greater);
 
         }
     }
